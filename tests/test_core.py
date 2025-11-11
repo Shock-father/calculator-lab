@@ -1,6 +1,9 @@
-# tests/test_core.py
-from calculator import core
 import pytest
+from calculator import core
+import sys
+import os
+sys.path.insert(0, os.path.abspath(
+    os.path.join(os.path.dirname(__file__), '..')))
 
 
 def test_add():
